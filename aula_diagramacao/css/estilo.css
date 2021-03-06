@@ -165,6 +165,12 @@ header a {
     padding:0;
 }
 
+
+.box-3{
+
+    background-color: yellow;
+}
+
 .box-2 {
     background-color: #fff;
     width: 50%;

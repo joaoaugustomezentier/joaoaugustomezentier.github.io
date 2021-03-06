@@ -164,8 +164,13 @@ header a {
     background: #fff url(../demo/backgrounds/01.png) repeat-y left top;
     padding:0;
 }
+.box-3-1{
 
-
+	width: 50%;
+min-width: 250px;
+display: inline-block;
+vertical-align: right;
+}
 .box-3{
 
     background-color: #fff;

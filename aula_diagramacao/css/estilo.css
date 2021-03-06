@@ -165,16 +165,16 @@ header a {
     padding:0;
 }
 .box-3-1{
-
 	width: 50%;
-min-width: 150px;
-display: inline-block;
-vertical-align: right;
+	height: 50%;
+	display: inline-block;
+	background-color: #fff
 }
+	
 .box-3{
 
     background-color: #fff;
-  
+    
 }
 
 

@@ -173,7 +173,9 @@ header a {
 }	
 .box-3{
 
-	 width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	 width: 300px;
     background-color: #fff;
     
 }

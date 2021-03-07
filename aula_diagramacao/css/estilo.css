@@ -200,7 +200,11 @@ header a {
 	vertical-align: top;
 
 }
+.banner-3{
+	background: #fff url(../demo/backgrounds/01.png)
+}
 .footer{
+	
 	background-color: #fff;
 }
 

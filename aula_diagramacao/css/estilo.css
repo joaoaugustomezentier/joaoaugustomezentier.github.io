@@ -218,6 +218,12 @@ header a {
 
 }
 
+.card-2{
+  width: 300px;
+  margin: 10px;
+	display: inline-block;
+}
+
 /* end of classes */
 
 footer section {

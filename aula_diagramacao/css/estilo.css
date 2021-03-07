@@ -193,15 +193,12 @@ header a {
 }
 
 .card{
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 400px;
   margin: 20px;
 	display: inline-block;
 	vertical-align: top;
 
-}
-.banner-3{
-	background: #fff url(../demo/backgrounds/01.png)
 }
 .footer{
 	

@@ -192,6 +192,12 @@ header a {
     padding-right:150px;
 }
 
+.card{
+  width: 200px;
+  height: 300px;
+
+}
+
 /* end of classes */
 
 footer section {

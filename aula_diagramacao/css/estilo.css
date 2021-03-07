@@ -211,6 +211,11 @@ header a {
 	
 	background-color: #fff;
 }
+.col3{
+	 margin: 10px;
+	display: inline-block;
+
+}
 
 /* end of classes */
 

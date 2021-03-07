@@ -94,7 +94,7 @@ header a {
 }
 
 .wrapper{
-    width:1200px;
+    width:1000px;
     margin:auto;
 }
 
@@ -193,7 +193,7 @@ header a {
 }
 
 .card{
-  width: 390px;
+  width: 300px;
   margin: 10px;
 	display: inline-block;
 }

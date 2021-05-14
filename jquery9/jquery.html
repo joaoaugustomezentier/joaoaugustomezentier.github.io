@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<input type='password' placeholder='Senha' />
+<span title='Força da senha' class='password-strength'></span>
+<script >$(function() {
+  
+  $('input').on('keyup', function() {
+    
+    var length = $(this).val().length;
+
+    var title = 'Força da senha';
+    if (length > 0) {
+      if (length <= 2)
+        title = 'fraca';
+      
+      else if (length > 2 && length < 8)
+        title = 'normal';
+      
+      else 
+        title = 'forte';
+    }
+    
+    $('.password-strength').attr('title', title);
+  });
+  
+});
+</script>

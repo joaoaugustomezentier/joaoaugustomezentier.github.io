@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+	width: 100%;
+	height: 60px;
+	background: #000;
+}
+
+
+.logo-parent{ width: 10%; height: 100%;float: left; display: flex; align-items: center;}
+.logo-parent img{ height: 90%; }
+.menu{ width: 90%; height: 100%; float: right;}
+.menu ul{height: 100%; display: flex; flex-direction: row; list-style: none; justify-content: flex-end;}
+.menu ul li{padding: 20px; cursor: pointer;}
+.menu ul li:hover{ border-bottom: 3px solid #FFF;}
+.menu ul li a{color: #FFF; height: 100%}
+.menu ul li a:hover{color: #e5dcdc;}
+
+
+.container-background{ display: flex; justify-content: center; align-items: center; background-image: url('../img/bandeira.png'); height: 520px; width: 100%; background-size: cover; background-color: rgba(0,0,0,.75); background-blend-mode: multiply;}
+.container-background div{width: 80%; text-align: center;}
+.container-background div h1{color: #FFF; font-size: 8em; font-family: 'Teko', 'Roboto', sans-serif;}
+.container-background div a{transition: all .5s ease; color: #FFF; background: #53019b;padding: 15px 40px; border: 0.5px groove #FFF; border-radius: 20px} 
+.container-background div a:hover{ left:0;top:0; background-color: #770ad6}
+
+
+
+
+.parallax{ height: 200px; display: flex; width: 100%; align-items: center; background-image: url('../img/fundo.png'); background-size: cover; background-color: rgba(0,0,0,.35); background-blend-mode: multiply; background-attachment: fixed}
+.parallax span{font-size: 4em; color: #FFF;}
+
+
+
+.wrap{width: 100%; display: flex; justify-content: center; flex-wrap: wrap; align-items: center}
+.content{ width: 90%; height: 100%; padding: 50px 0; }
+.content h2{text-align: center; font-size: 3em; font-family: 'Teko', 'Roboto', sans-serif;}
+.cards{display: flex; justify-content: center; flex-direction: row ;}
+.card-shadow{margin: 0 10px;width: 30%;padding: 30px;text-align: center;min-height: 264px;height: 250px; box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);}
+.card-shadow img{ width: 128px; }
+
+
+
+.destinos,.img-row-1, .img-row-2{width: 100%;}/*  */
+.destinos div figure{width: 33.3%;height: 300px;overflow:hidden;	margin: 0;padding: 0;background: #fff;}/*  */
+.destinos div figure:hover img {-webkit-transform: rotate(0) scale(1);transform: rotate(0) scale(1);}/*  */
+.destinos div img{ height: 330px; width: 100%;-webkit-transform: rotate(15deg) scale(1.4);transform: rotate(15deg) scale(1.4);-webkit-transition: .3s ease-in-out;transition: .3s ease-in-out;}/* trocar */
+.destinos div{display: flex; flex-direction: row;}/* */
+
+
+footer{ width: 100%; background: #000;  color: #FFF;height: 110px; display: flex; justify-content: center; align-items: center}
+
+
+@media screen and (max-width: 734px){
+	.cards{flex-wrap: wrap;}
+	.cards div{width: 90%; margin: 5px 0;}
+	.parallax span{text-align: center;}
+	.destinos div{flex-wrap: wrap; display: flex;justify-content: center}
+	.destinos div figure{width: 90%; justify-content: center}
+}
+.logotipo {
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+}
+.logotipo img {
+    width: 20%;
+    vertical-align: middle;
+}
+.redes {
+    width: 100%;
+    text-align: center;
+}
+.redes img {
+    width: 18%;
+}
+.redes ul li {
+    text-transform: uppercase;
+    list-style-type: none;
+    display: inline;
+}
+@media only screen and (min-width: 450px)
+and (max-width: 769px){
+    footer {
+        clear: both;
+        width: 100%;
+     }
+     .logotipo {
+         width: 50%;
+         float: left;
+         text-align: left;
+     }
+     .redes {
+         width: 50%;
+         float: right;
+     }
+}
+@media only screen and (min-width: 769px) {
+    footer {
+        width: 100%;
+        clear: both;
+        margin-bottom: 3%;
+    }
+    .logotipo {
+        font-size: 1em;
+        width: 45%;
+        float: left;
+        text-align: center;
+     }
+     .logotipo img, .redes img {
+         width: 10%;
+     }
+     .redes {
+         width: 45%;
+         float: right;
+         margin-right: 1%;
+         text-align: center;
+     }
+}

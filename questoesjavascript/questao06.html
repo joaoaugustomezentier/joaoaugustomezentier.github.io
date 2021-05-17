@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Valor total de um carro</title>
+        <meta charset="utf-8">
+    <body>
+        <section>
+            <div class="centro">
+                Custo de Fábrica:
+                <input class="custfab" type="text"><br>
+                <button onclick="clicar()">Resultado</button>
+                <p class="resultado"></p>
+            </div>
+        </section>
+    </body>
+</html>
+<script type="text/javascript">
+    function clicar() {
+    var custfab = document.querySelector(".custfab").value;
+    
+  var resultado = parseInt(custfab)+(parseInt(custfab)*2.8/100)+(parseInt(custfab)*4.5/100);
+
+
+
+    document.querySelector(".resultado").innerHTML = resultado;
+}
+</script>

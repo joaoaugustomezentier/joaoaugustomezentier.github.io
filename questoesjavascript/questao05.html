@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Novo salario</title>
+        <meta charset="utf-8">
+        <script src="somar.js"></script>
+        
+        <link rel="stylesheet" href="reset.css">
+    </head>
+    <body>
+        <section>
+            <div class="centro">
+                Valor salario:
+                <input class="num1" type="text"><br>
+                Valor reajuste:
+                <input class="num2" type="number"><br>
+                <button onclick="clicar()">Resultado</button>
+                <p class="resultado"></p>
+            </div>
+        </section>
+    </body>
+</html>
+<script type="text/javascript">
+    function clicar() {
+    var num1 = document.querySelector(".num1").value;
+    var num2 = document.querySelector(".num2").value;
+   
+    var resultado = parseInt(num1)+(parseInt(num1) * (parseInt(num2))/100);
+    document.querySelector(".resultado").innerHTML = resultado;
+    }
+</script>

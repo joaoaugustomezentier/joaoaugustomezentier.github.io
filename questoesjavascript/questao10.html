@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Custo de maçã</title>
+        <meta charset="utf-8">
+        <script src="somar.js"></script>
+        <link rel="stylesheet" href="somar.css">
+        <link rel="stylesheet" href="reset.css">
+    </head>
+    <body>
+        <section>
+            <div class="centro">
+                Quantidade de maçãs:
+                <input class="qtdma" type="text"><br>
+                <button onclick="clicar()">Resultado</button>
+                <p class="resultado"></p>
+            </div>
+        </section>
+    </body>
+</html>
+<script type="text/javascript">
+    function clicar() {
+    var qtdma = document.querySelector(".qtdma").value;
+    
+if (qtdma<12) {
+  var resultado = parseInt(qtdma) *1.30;
+}else{
+    var resultado = parseInt(qtdma)*1;
+
+
+}   
+    document.querySelector(".resultado").innerHTML = resultado;
+}
+</script>

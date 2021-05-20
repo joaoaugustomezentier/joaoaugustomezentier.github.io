@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Cadastro de Livros</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<h1>Cadastro de Livros</h1>
+<form id="cad" method="post" action="http://rafaelescalfoni.net/web/livros.php">
+	<input id="tit" name="Título" placeholder="Titulo">
+
+
+
+<input  id="desc" name="Descrição" placeholder="Descrição">
+
+
+<select  id="gen" name="Genero">
+<option>&nbsp</option>	
+<option value="Romance">Romance</option>
+<option value="Drama">Drama</option>
+<option value="Terror">Terror</option>
+<option value="Ficção">Ficção </option>
+<option value="Técnico">Técnico</option>
+</select>
+
+
+
+	<input id="aut" name="Autor" placeholder="Autor">
+</form>
+
+<button id="Cadastro">Cadastrar</button>
+
+<h2>Catalogo</h2>
+
+<span id="cotit">Titulo</span> <p id="repstit"></p>
+
+<span id="condesc">Descrição</span> <p id="repdes"></p>
+
+
+ <span id="cogen" >Gênero</span> <p id ="repgen"></p>
+
+<span id="coaut">Autor</span> <p id="repaut"></p>
+<input type="submit" id="gravar" value="gravar" />
+<button id ="clear_list">Limpar Lista </button>
+
+
+<script>
+
+	$(function(){
+		$("#Cadastro").click(function(){
+			 let item = $("#tit").val();
+			 let objt_li= $("<li>").text(item);
+			 $("#repstit").append(objt_li);
+		})
+	});
+	
+	$(function(){
+		$("#Cadastro").click(function(){
+			 let item = $("#desc").val();
+			 let objt_li= $("<li>").text(item);
+			 $("#repdes").append(objt_li);
+		})
+	});
+
+	$(function(){
+		$("#Cadastro").click(function(){
+			 let item = $("#gen").val();
+			 let objt_li= $("<li>").text(item);
+			 $("#repgen").append(objt_li);
+		})
+	});
+	$(function(){
+		$("#Cadastro").click(function(){
+			 let item = $("#aut").val();
+			 let objt_li= $("<li>").text(item);
+			 $("#repaut").append(objt_li);
+		})
+	});
+
+$("#clear_list").click(function(){
+		$("#repaut").empty();
+		});
+
+$("#clear_list").click(function(){
+		$("#repgen").empty();
+		});
+$("#clear_list").click(function(){
+		$("#repdes").empty();
+		});
+$("#clear_list").click(function(){
+		$("#repstit").empty();
+		});
+
+
+$('#cad').submit(function() {
+    var form = $(this);
+    $.post(form.attr('action'), form.serialize(), function(retorno) {
+        alert(retorno);
+    });
+    return false;
+});
+
+</script>
+</body>
+</html>
